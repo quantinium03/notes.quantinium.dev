@@ -55,26 +55,26 @@ const config: QuartzConfig = {
 
             colors: {
                 lightMode: {
-                    light: "#fbf1c7",         // Background
-                    lightgray: "#ebdbb2",     // Light gray
-                    gray: "#d5c4a1",          // Gray
-                    darkgray: "#a89984",      // Dark gray
-                    dark: "#7c6f64",          // Foreground
-                    secondary: "#d79921",     // Yellow
-                    tertiary: "#98971a",      // Green
-                    highlight: "rgba(214, 93, 14, 0.15)", // Orange (subtle highlight)
-                    textHighlight: "#fabd2f88",           // Yellow highlight
+                    light: "#fbf1c7",
+                    lightgray: "#ebdbb2",
+                    gray: "#928374",
+                    darkgray: "#7c6f64",
+                    dark: "#3c3836",
+                    secondary: "#b57614",
+                    tertiary: "#79740e",
+                    highlight: "rgba(d65d0e, 0.15)",
+                    textHighlight: "#fabd2f33",
                 },
                 darkMode: {
-                    light: "#282828",         // Background
-                    lightgray: "#3c3836",     // Light gray
-                    gray: "#504945",          // Gray
-                    darkgray: "#bdae93",      // Dark gray
-                    dark: "#ebdbb2",          // Foreground
-                    secondary: "#d79921",     // Yellow
-                    tertiary: "#98971a",      // Green
-                    highlight: "rgba(214, 93, 14, 0.15)", // Orange (subtle highlight)
-                    textHighlight: "#fabd2f88",           // Yellow highlight
+                    light: "#282828",         // Gruvbox dark background
+                    lightgray: "#3c3836",     // Gruvbox dark0_soft
+                    gray: "#928374",          // Lightened gray
+                    darkgray: "#a89984",      // Lightened darkgray
+                    dark: "#fbf1c7",          // Gruvbox lightest (even lighter text)
+                    secondary: "#fabd2f",     // Brighter yellow
+                    tertiary: "#b8bb26",      // Brighter green
+                    highlight: "rgba(fe8019, 0.15)",  // Gruvbox bright orange
+                    textHighlight: "#fabd2f33",       // Gruvbox bright yellow
                 },
             },
         },
