@@ -2,6 +2,8 @@
 id: ssh_android_to_pc
 aliases: []
 tags: []
+description: step to ssh into termux
+title: ssh_android_to_pc
 ---
 
 1. Install Termux in android using F-droid

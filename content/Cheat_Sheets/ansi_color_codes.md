@@ -2,12 +2,8 @@
 id: ansi_color_codes
 aliases: []
 tags: []
----
-
----
-id: ansi-color-escape-code
-aliases: []
-tags: []
+description: A list of all colors in ansi
+title: Ansi Colors
 ---
 
 # Regular Colors

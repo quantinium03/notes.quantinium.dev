@@ -1,7 +1,8 @@
 ---
-id: Hi
+id: index
 aliases: []
 tags: []
+title: Hi
 ---
 
 # Hi, I'm **quantinium**

@@ -2,6 +2,8 @@
 id: Git
 aliases: []
 tags: []
+description: A cheatsheet for most used git commands
+title: Git
 ---
 
 ### Create ssh key and link it to github
