@@ -5,7 +5,7 @@ tags: []
 title: Hi
 ---
 
-# Hi, I'm **quantinium**
+# I'm **quantinium**
 
 - Uni student exploring the boundaries of computer science.
 - Terminal dweller and daily NixOS driver.
