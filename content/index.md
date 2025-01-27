@@ -7,9 +7,9 @@ title: Hi
 
 # I'm **quantinium**
 
-- Uni student exploring the boundaries of computer science.
+- Uni student trying to teach computers.
 - Terminal dweller and daily NixOS driver.
-- Passionate about programming languages and tinkering with new technologies every day.
+- I love programming and try to tinker and learn new things everyday.
 
 ## Tech Stack
 
