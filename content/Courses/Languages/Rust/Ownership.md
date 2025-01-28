@@ -313,3 +313,41 @@ fn dangle() -> &String { // dangle returns a reference to a String
 The rules of references - 
 - At any given time, you can have _either_ one mutable reference _or_ any number of immutable references.
 - References must always be valid.
+
+## Slices
+_Slices_ let you reference a contiguous sequence of elements in a [collection](https://doc.rust-lang.org/stable/book/ch08-00-common-collections.html) rather than the whole collection. A slice is a kind of reference, so it does not have ownership.
+
+### String slices
+A _string slice_ is a reference to part of a `String`, and it looks like this:
+```rust
+    let s = String::from("hello world");
+
+    let hello = &s[0..5];
+    let world = &s[6..11];
+```
+
+Rather than a reference to the entire `String`, `hello` is a reference to a portion of the `String`, specified in the extra `[0..5]` bit. We create slices using a range within brackets by specifying `[starting_index..ending_index]`, where `starting_index` is the first position in the slice and `ending_index` is one more than the last position in the slice. Internally, the slice data structure stores the starting position and the length of the slice, which corresponds to `ending_index` minus `starting_index`.
+
+![slice_representation](https://doc.rust-lang.org/stable/book/img/trpl04-07.svg)
+> String slice range indices must occur at valid UTF-8 character boundaries. If you attempt to create a string slice in the middle of a multibyte character, your program will exit with an error.
+
+#### String literals as slices
+As we know that string literals are stored inside the binary
+```rust
+let s = "Hello, world!";
+```
+
+The type of `s` here is `&str`: it’s a slice pointing to that specific point of the binary. This is also why string literals are immutable; `&str` is an immutable reference.
+
+#### Other parameters
+String slices, as you might imagine, are specific to strings. But there’s a more general slice type too. Consider this array:
+```rust
+let a = [1, 2, 3, 4, 5];
+```
+
+```rust
+let a = [1, 2, 3, 4, 5];
+let slice = &a[1..3];
+assert_eq!(slice, &[2, 3]);
+```
+This slice has the type `&[i32]`. It works the same way as string slices do, by storing a reference to the first element and a length
