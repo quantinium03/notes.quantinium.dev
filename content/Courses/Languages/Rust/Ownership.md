@@ -266,3 +266,50 @@ fn takes_and_gives_back(a_string: String) -> String { // a_string comes into
 This way of giving ownership and taking back ownership of the variable by returning seems tedious therefore we use references to deal with this.
 
 ## References and Borrowing
+Instead of returning a tuple from a function to be able to use that variable again we will pass it as a reference to the function.
+
+>  A _reference_ is like a pointer in that it’s an address we can follow to access the data stored at that address; that data is owned by some other variable. Unlike a pointer, a reference is guaranteed to point to a valid value of a particular type for the life of that reference.
+
+```rust
+fn main() {
+    let s1 = String::from("hello");
+    let len = calculate_length(&s1);
+    println!("The length of '{s1}' is {len}.");
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+```
+
+In the above example we pass reference of `s1` to `calculate length` , therefore we are able to use it the function without the variable being dropped when function finishes running as the `s1` owner is still the main function.
+
+We call the action of creating a reference _borrowing_. As in real life, if a person owns something, you can borrow it from them. When you’re done, you have to give it back. You don’t own it.
+
+There are two types of references:
+- **Immutable Reference (`&T`)** - 
+	- An immutable reference allows you to read the data but not modify it.
+	- Multiple immutable references to the same data are allowed at the same time.
+- **Mutable Reference (`&mut T`)**
+	- - A mutable reference allows you to read and modify the data.
+	- Only one mutable reference to a particular piece of data is allowed at a time (no other references, mutable or immutable, can exist simultaneously).
+
+Once caveat of mutable references have one big restriction that you cant make more than one mutable references as this can cause data races but we can have as many immutable references as we want.
+
+### Dangling references
+In languages like C or C++ it's really easy to create dangling pointers. In Rust,  the compiler guarantees that references will never be dangling references: if you have a reference to some data, the compiler will ensure that the data will not go out of scope before the reference to the data does.
+
+```rust
+fn dangle() -> &String { // dangle returns a reference to a String
+
+    let s = String::from("hello"); // s is a new String
+
+    &s // we return a reference to the String, s
+} // Here, s goes out of scope, and is dropped. Its memory goes away.
+  // Danger!
+```
+
+### The Rules of References 
+The rules of references - 
+- At any given time, you can have _either_ one mutable reference _or_ any number of immutable references.
+- References must always be valid.
