@@ -10,13 +10,13 @@ Javascript / Java (same thing) is the language used to make websites by making t
 - Single-threaded
 - Dynamic language
 
-``` Javascript
+```js
 console.log("Hello World");
 ```
 
 In JS, you can use a template literal to interpolate dynamic values into a string templates. Kinda like python f-string.
 Template literals start with back-ticks. It allows us to interpolate dynamic values into string template.
-``` Javascript
+```js
 const v = 5; //declare using const
 let w = 5; // declare using let
 console.log(`v is ${v}`);
