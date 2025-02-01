@@ -169,3 +169,41 @@ fn find_user(id: u32) -> Option<User> {
 ```
 
 ### To Panic or not panic
+#### When to Use panic!:
+- Unrecoverable Errors: Use panic! when an error is unrecoverable, such as when a program enters a "bad state" (e.g., invalid values, broken invariants, or unsafe conditions).
+- Examples, Prototypes, and Tests: In examples, prototypes, and tests, panic! (via unwrap or expect) is acceptable for simplicity, as robust error handling can obscure the main point.
+- Logical Guarantees: Use panic! when you have logical guarantees that an error cannot occur (e.g., hardcoded valid values), even if the compiler cannot verify it.
+- Safety and Security: Panic when invalid inputs could lead to unsafe or harmful behavior, such as out-of-bounds memory access.
+
+#### When to Use Result:
+- Recoverable Errors: Use Result for errors that the calling code might recover from, such as parsing malformed data or handling rate limits.
+- Default Choice: Returning Result is the default choice for functions that might fail, as it allows the caller to decide how to handle errors.
+
+#### Guidelines for Error Handling:
+- Bad State: Panic when the program enters a bad state (e.g., invalid inputs, broken invariants) and recovery is not feasible.
+- Expected Failures: Use Result for expected failures, such as user input errors or network issues.
+- Type System: Leverage Rust’s type system (e.g., Option, u32) to enforce valid values at compile time, reducing the need for runtime checks.
+
+#### Custom Types for Validation:
+- Encapsulate Validation: Create custom types (e.g., a Guess type for values between 1 and 100) to enforce validation rules and avoid repetitive checks.
+- Private Fields: Use private fields to ensure values are only set through controlled constructors that enforce validation.
+
+```rust
+pub struct Guess {
+    value: i32,
+}
+
+impl Guess {
+    pub fn new(value: i32) -> Guess {
+        if value < 1 || value > 100 {
+            panic!("Guess value must be between 1 and 100, got {value}.");
+        }
+        Guess { value }
+    }
+
+    pub fn value(&self) -> i32 {
+        self.value
+    }
+}
+```
+This Guess type ensures values are always within the valid range, panicking if not, and encapsulates the validation logic.
