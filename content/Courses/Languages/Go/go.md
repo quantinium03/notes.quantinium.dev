@@ -4,8 +4,6 @@ aliases: []
 tags: []
 ---
 
-Note: Every code block is in go but is mentioned as c due to no code highlighting for go
-
 ## Hello World
 
 ```go
