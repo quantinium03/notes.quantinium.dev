@@ -38,7 +38,7 @@ It's null. Most programming languages have it. null values are 'falsy'
 Normal operator usage and normal if else and ternary operator like python or c.
 
 ### Functions 
-``` Javascript
+```js
 console.log(getLabel(3))
 // prints 'awful'
 
@@ -55,7 +55,7 @@ function getLabel(numStars) {
 JS interpreter reads whole first and function definition are globally scoped, then goes back to executing where it is called. In JS it doesn't matter where the function definitions occur. 
 
 #### Other ways to define a function
-```Javascript
+```js
 //using the function keyworkd
 function add(x, y) {
     return x + y;
@@ -72,7 +72,7 @@ const add = (x, y) => {
 
 ### Arrays
 These are dynamically allocated arrays. Python list. C++ vectors.
-``` Javascript
+```js
 const numbers = [1, 2, 3, 4, 5]
 const strings = ['banana', 'apple', 'pear']
 const miscellaneous = [true, 7, 'adamantium']
@@ -80,7 +80,7 @@ numbers.push(6);
 console.log(numbers[0])
 ```
 ### Loops 
-```Javascript
+```js
 for (let i = 0; i < 10; i++) {
   console.log(i)
 }
@@ -98,7 +98,7 @@ for (let i of list) {
 
 ### Objects 
 JS has a object type. They are variables that can hold more complex information than basic types like String, Number and Boolean.
-``` Javascript
+```js
 const apple = {
   name: 'Apple',
   radius: 2,
@@ -108,7 +108,7 @@ const apple = {
 
 **Syntactic Sugar**
 
-``` Javascript
+```js
 const name = 'Apple'
 const radius = 2
 const color = 'red'
@@ -131,7 +131,7 @@ const apple = {
 #### Object Methods
 Javascript Object have methods. Methods are functions that are defined inside an object. They can access and change the properties of the object in question.
 
-``` Javascript
+```js
 const person = {
   firstName: 'Lane',
   lastName: 'Wagner',
@@ -145,7 +145,7 @@ console.log(person.getFullName())
 
 Methods can mutate the properties of their object.
 
-``` Javascript
+```js
 const tree = {
   height: 256,
   color: 'green',
@@ -160,7 +160,7 @@ console.log(tree.height)
 ```
 
 ### this
-``` Javascript
+```js
 const author = {
   firstName: 'Lane',
   lastName: 'Wagner',
@@ -172,7 +172,7 @@ console.log(author.getName())
 // Prints: Lane Wagner
 ```
 
-``` Javascript
+```js
 const author = {
   firstName: 'Lane',
   lastName: 'Wagner',
@@ -199,7 +199,7 @@ Gonna catch deez errors.
 
 It's try catch finally. finally is rarely used so we generally use try-catch. 
 
-``` Javascript
+```js
 try {
   //code to run
 } catch (err) {
@@ -211,7 +211,7 @@ try {
 ```
 
 Throwing our own error. If we know something bad will happen if the input is of something we know is entered, we can throw an error.
-``` Javascript
+```js
 throw new Error('something went wrong');
 ```
 
