@@ -3,6 +3,7 @@ id: Enums
 aliases: 
 tags:
   - "#Rust/Enums"
+  - Rust
 description: Enums in rust
 title: Enums
 ---

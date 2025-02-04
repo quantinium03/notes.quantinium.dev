@@ -3,6 +3,7 @@ id: Generics
 aliases: 
 tags:
   - "#Rust/Generics"
+  - Rust
 title: Generics
 ---
 

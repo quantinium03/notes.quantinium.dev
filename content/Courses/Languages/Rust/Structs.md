@@ -5,6 +5,7 @@ tags:
   - "#Rust/Structs"
   - "#Rust/Impl"
   - "#Rust/Methods"
+  - Rust
 title: Structs
 ---
 

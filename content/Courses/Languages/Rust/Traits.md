@@ -3,6 +3,7 @@ id: Traits
 aliases: 
 tags:
   - "#Rust/Traits"
+  - Rust
 title: Traits
 ---
 

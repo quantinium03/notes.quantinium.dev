@@ -3,6 +3,7 @@ id: Collections
 aliases: 
 tags:
   - "#Rust/Collections"
+  - Rust
 title: Collections
 ---
 

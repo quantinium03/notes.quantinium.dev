@@ -8,6 +8,7 @@ tags:
   - "#Rust/Comments"
   - "#Rust/Conditionals"
   - "#Rust/Loops"
+  - Rust
 ---
 
 ## Variables and Mutability

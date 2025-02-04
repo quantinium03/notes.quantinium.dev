@@ -3,6 +3,7 @@ id: Packaging
 aliases: 
 tags:
   - "#Rust/Packaging"
+  - Rust
 title: Packaging
 ---
 

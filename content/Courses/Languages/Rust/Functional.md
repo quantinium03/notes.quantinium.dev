@@ -3,6 +3,7 @@ id: Functional
 aliases: 
 tags:
   - "#Rust/funcional"
+  - Rust
 title: Functional
 ---
 

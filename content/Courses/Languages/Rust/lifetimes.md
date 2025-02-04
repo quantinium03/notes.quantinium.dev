@@ -3,6 +3,7 @@ id: lifetimes
 aliases: 
 tags:
   - "#Rust/Lifetimes"
+  - Rust
 title: lifetimes
 ---
 

@@ -8,6 +8,7 @@ tags:
   - "#Rust/Strings"
   - "#Rust/Borrowing"
   - "#Rust/References"
+  - Rust
 title: Ownership
 ---
 

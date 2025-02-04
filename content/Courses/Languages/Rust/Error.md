@@ -3,6 +3,7 @@ id: Error
 aliases: 
 tags:
   - "#Rust/Errors"
+  - Rust
 title: Error
 ---
 
