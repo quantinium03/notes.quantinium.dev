@@ -1,7 +1,8 @@
 ---
 id: Collections
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/Collections"
 title: Collections
 ---
 

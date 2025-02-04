@@ -1,7 +1,8 @@
 ---
 id: Packaging
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/Packaging"
 title: Packaging
 ---
 

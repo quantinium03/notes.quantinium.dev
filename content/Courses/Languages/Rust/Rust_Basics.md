@@ -1,8 +1,13 @@
 ---
 id: Rust_Basics
-aliases: []
+aliases: 
 tags:
-  - "\"['Rust'](quantinium/Courses/Languages/Rust/1737847864-MVAZ.md)\","
+  - "#Rust/Variables"
+  - "#Rust/DataTypes"
+  - "#Rust/Syntax"
+  - "#Rust/Comments"
+  - "#Rust/Conditionals"
+  - "#Rust/Loops"
 ---
 
 ## Variables and Mutability
@@ -434,5 +439,3 @@ fn main() {
     }
 }
 ```
-
-[[ow]]

@@ -1,7 +1,8 @@
 ---
 id: Functional
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/funcional"
 title: Functional
 ---
 

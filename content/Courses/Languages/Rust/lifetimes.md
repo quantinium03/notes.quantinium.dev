@@ -1,7 +1,8 @@
 ---
 id: lifetimes
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/Lifetimes"
 title: lifetimes
 ---
 

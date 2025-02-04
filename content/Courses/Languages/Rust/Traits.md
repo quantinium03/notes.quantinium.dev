@@ -1,7 +1,8 @@
 ---
 id: Traits
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/Traits"
 title: Traits
 ---
 

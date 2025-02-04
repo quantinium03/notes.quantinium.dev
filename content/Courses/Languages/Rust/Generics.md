@@ -1,7 +1,8 @@
 ---
 id: Generics
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/Generics"
 title: Generics
 ---
 

@@ -1,7 +1,8 @@
 ---
 id: Error
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/Errors"
 title: Error
 ---
 

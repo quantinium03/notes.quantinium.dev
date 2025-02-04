@@ -1,7 +1,8 @@
 ---
 id: Enums
-aliases: []
-tags: []
+aliases: 
+tags:
+  - "#Rust/Enums"
 description: Enums in rust
 title: Enums
 ---

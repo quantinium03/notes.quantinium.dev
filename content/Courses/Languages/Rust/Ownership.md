@@ -1,3 +1,16 @@
+---
+id: Ownership
+aliases: 
+tags:
+  - "#Rust/Ownership"
+  - "#Rust/Scope"
+  - "#Rust/Slices"
+  - "#Rust/Strings"
+  - "#Rust/Borrowing"
+  - "#Rust/References"
+title: Ownership
+---
+
 Ownership is Rust's way of managing memory safety without a garbage collector. It enforces strict rules at compile time to ensure memory safety, prevent data races, and eliminate common bugs like null pointer dereferencing or use-after-free errors.
 ### Stack and Heap
 The stack and heap are two regions of memory used for different purposes in a program. They differ in how memory is allocated, accessed, and managed.

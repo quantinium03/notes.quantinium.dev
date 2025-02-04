@@ -1,3 +1,13 @@
+---
+id: Structs
+aliases: 
+tags:
+  - "#Rust/Structs"
+  - "#Rust/Impl"
+  - "#Rust/Methods"
+title: Structs
+---
+
 In Rust, a **struct** (short for "structure") is a custom data type that allows you to group together related data. Structs are similar to tuples, but unlike tuples, structs give names to each piece of data, making the code more readable and manageable.
 
 ### Defining a Struct
