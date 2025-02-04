@@ -4,6 +4,7 @@ aliases:
 tags:
   - "#Rust/Errors"
   - Rust
+  - Rust/Result
 title: Error
 ---
 

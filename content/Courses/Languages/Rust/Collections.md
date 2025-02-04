@@ -4,6 +4,9 @@ aliases:
 tags:
   - "#Rust/Collections"
   - Rust
+  - Rust/Collections/Vectors
+  - Rust/Collections/HashMap
+  - Rust/Collections/String
 title: Collections
 ---
 
