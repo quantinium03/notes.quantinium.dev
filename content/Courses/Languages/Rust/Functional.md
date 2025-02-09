@@ -1,8 +1,8 @@
 ---
 id: Functional
-aliases: 
+aliases: []
 tags:
-  - "#Rust/funcional"
+  - #Rust/funcional
   - Rust
 title: Functional
 ---
@@ -96,4 +96,75 @@ The way a closure captures and handles values from the environment affects which
 - `FnMut`  applies to closures that don’t move captured values out of their body, but that might mutate the captured values. These closures can be called more than once.
 - `Fn` applies to closures that don’t move captured values out of their body and that don’t mutate captured values, as well as closures that capture nothing from their environment. These closures can be called more than once without mutating their environment, which is important in cases such as calling a closure multiple times concurrently.
 
+## Iterators
+The iterator pattern allows you to perform some task on a sequence of items in turn. In Rust, iterators are lazy, meaning they have no effect until you call the methods that consume the iterator to use it up.
 
+```rust
+    let v1 = vec![1, 2, 3];
+
+    let v1_iter = v1.iter();
+
+    for val in v1_iter {
+        println!("Got: {val}");
+    }
+
+```
+
+- The iterator `v1_iter` doesn't do anything until it is consumed by the `for` loop.
+- The `iter()` method returns an iterator that borrows the elements of the vector `(&T)`. If you wanted to take ownership of the elements, you could use `into_iter()` instead of `iter()`.
+- Iterators in Rust are highly flexible and can be combined with various methods like `map`, `filter`, `collect`, etc., to perform complex operations on sequences of data.
+
+From a performance point of view, iterators and for loops perform generally the same. `Iterators` is rust are one of the no cost abstractions
+
+### The iterator trait and next method
+All iterators implement a trait named `Iterator` that is defined in the std library. 
+```rust
+pub trait Iterator {
+    type Item;
+
+    fn next(&mut self) -> Option<Self::Item>;
+    // methods with default implementations elided
+}
+```
+Implementing the `Iterator` trait requires to define `Item` type and `next` method. The `next` method which returns one item of iterator at a time wrapped in `Some` and, when iteration is over, return `None`.
+
+```rust
+    #[test]
+    fn iterator_demonstration() {
+        let v1 = vec![1, 2, 3];
+
+        let mut v1_iter = v1.iter();
+
+        assert_eq!(v1_iter.next(), Some(&1));
+        assert_eq!(v1_iter.next(), Some(&2));
+        assert_eq!(v1_iter.next(), Some(&3));
+        assert_eq!(v1_iter.next(), None);
+    }
+```
+we needed to make `v1` mutable cause using the `next` method changes the internal state of the iterator cause it has to keep track of where it is in the sequence. Also when we call the `next` method, we get immutable reference of the value in the vector.
+
+### Methods that consume an iterator.
+- [ ] Methods that call `next` are called **consuming adapters**, because calling them uses up the iterator. For example `sum` method, which takes ownership of the iterator and calculates the sum.
+```rust
+    #[test]
+    fn iterator_sum() {
+        let v1 = vec![1, 2, 3];
+
+        let v1_iter = v1.iter();
+
+        let total: i32 = v1_iter.sum();
+
+        assert_eq!(total, 6);
+    }
+```
+
+### Methods that produce other iterators
+**Iterator adaptors** are methods defined on the `Iterator` trait that don't consume the iterator. Instead they produce the iterators.
+```rust
+    let v1: Vec<i32> = vec![1, 2, 3];
+
+    let v2: Vec<_> = v1.iter().map(|x| x + 1).collect();
+
+    assert_eq!(v2, vec![2, 3, 4]);
+```
+Iterator adapter are lazy, and we need to consume the iterator here. Therefore we use the `collect` method which consumes the iterator and collects the resulting values into a collection data type.
