@@ -411,3 +411,42 @@ Unguided transmission is classified into three main types based on the frequency
 | **UHF (Ultra High Frequency)**     | 300 MHz–3 GHz | Line-of-sight      | UHF TV, cellular phones, satellite    |
 | **SHF (Super High Frequency)**     | 3–30 GHz      | Line-of-sight      | Satellite communication               |
 | **EHF (Extremely High Frequency)** | 30–300 GHz    | Line-of-sight      | Radar, satellite                      |
+
+
+### **Wired LAN (Local Area Network)**  
+A **Wired LAN (Local Area Network)** is a network where devices are connected using **physical cables**, typically **Ethernet cables**, to enable communication and data transfer. Wired LANs are widely used in **homes, offices, schools, and data centers** because they offer **high-speed, reliable, and secure** connectivity.  
+
+#### **Key Components of Wired LAN**  
+1. **Computers & Devices** – Workstations, servers, printers, and other networked devices.  
+2. **Network Interface Card (NIC)** – A hardware component in each device that connects it to the LAN.  
+3. **Switch** – A device that connects multiple computers and manages data transfer efficiently.  
+4. **Router** – Connects the LAN to external networks (e.g., the Internet).  
+5. **Ethernet Cables** – **Twisted pair cables** (Cat5, Cat6, Cat7) that transmit data between devices.  
+6. **Modem (Optional)** – If the LAN needs internet access, a modem connects to an ISP.  
+
+
+#### **Features of Wired LAN**  
+
+- **High Speed** – Can support speeds from **100 Mbps to 10 Gbps** or more.  
+- **Reliable Connection** – Less interference compared to wireless networks.  
+- **Secure** – Difficult to hack without physical access.  
+- **Low Latency** – Ideal for gaming, streaming, and large file transfers.  
+- **Limited Mobility** – Devices must be physically connected via cables.  
+- **Installation Complexity** – Requires cable management and setup.  
+
+
+## **Types of Wired LAN Technologies**  
+1. **Ethernet LAN** – Most common wired LAN, using **Ethernet cables** and switches.  
+2. **Token Ring LAN** – Older network topology where devices pass a "token" to communicate (rarely used today).  
+3. **Fiber Optic LAN** – Uses **fiber optic cables** for ultra-fast data transfer in large networks.  
+
+
+## **Comparison: Wired LAN vs. Wireless LAN**  
+
+| Feature          | Wired LAN | Wireless LAN |
+|-----------------|----------|-------------|
+| **Speed**      | High (up to 10 Gbps) | Lower (Wi-Fi maxes out around 1-2 Gbps) |
+| **Reliability** | Very stable | Affected by interference |
+| **Security**   | High (physical access needed) | Lower (vulnerable to hacking) |
+| **Mobility**   | Limited | High |
+| **Installation** | Complex (cabling required) | Simple (just a router) |
