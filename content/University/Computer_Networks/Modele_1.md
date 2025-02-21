@@ -8,6 +8,8 @@ title: Data Communication and Components
 ## **Transmission Media in Computer Networks**  
 **Transmission media** in computer networks refer to the physical or wireless pathways used to transmit data from one device to another. These media play a crucial role in determining the speed, bandwidth, and reliability of communication.  
 
+---
+
 ## **Types of Transmission Media**  
 Transmission media are broadly classified into two categories:  
 
@@ -26,7 +28,7 @@ A **twisted pair cable** is a type of guided transmission medium used to transmi
 - ##### **Types of Twisted Pair Cable**  
 	Twisted pair cables are classified into two main types:  
 
-##### **1. Unshielded Twisted Pair (UTP)**
+##### **1. Unshielded Twisted Pair (UTP)**  
 - **Description**: Lacks additional shielding, relying on wire twisting to reduce interference.  
 - **Advantages**:  
   - Cost-effective  
@@ -39,7 +41,7 @@ A **twisted pair cable** is a type of guided transmission medium used to transmi
   - Ethernet networks (Cat5, Cat6, Cat7 cables)  
   - Telephone lines  
 
-###### **2. Shielded Twisted Pair (STP)**
+###### **2. Shielded Twisted Pair (STP)**  
 - **Description**: Includes an additional shielding layer (metallic foil or braiding) around the twisted pairs to reduce interference.  
 - **Advantages**:  
   - Better protection against crosstalk and external interference  
@@ -66,23 +68,25 @@ Twisted pair cables are classified into different categories based on their data
 | **7**        | 600                  | LANs (Shielded, high-speed)    |
 
 ##### **Advantages of Twisted Pair Cable**  
-**Cost-effective** – Cheaper than fiber optics and coaxial cables.  
-**Easy to Install** – Flexible and easy to work with.  
-**Widely Available** – Commonly used in networking applications.  
-**Scalability** – Can support different network speeds based on category.  
+- **Cost-effective** – Cheaper than fiber optics and coaxial cables.  
+- **Easy to Install** – Flexible and easy to work with.  
+- **Widely Available** – Commonly used in networking applications.  
+- **Scalability** – Can support different network speeds based on category.  
 
 ##### **Disadvantages of Twisted Pair Cable**  
-**Limited Distance** – Signal degrades over long distances.  
-**Susceptible to Interference** – UTP cables are prone to external electrical noise.  
-**Lower Bandwidth** – Compared to fiber optic cables.  
+- **Limited Distance** – Signal degrades over long distances.  
+- **Susceptible to Interference** – UTP cables are prone to external electrical noise.  
+- **Lower Bandwidth** – Compared to fiber optic cables.  
 
 ##### **Applications of Twisted Pair Cable**  
-**Local Area Networks (LANs)** – Used in home and office Ethernet networks.  
-**Telephone Systems** – Used in landline communication.  
-**Security Systems** – Surveillance and alarm systems.  
-**Industrial Communication** – STP cables are used in noisy environments.  
+- **Local Area Networks (LANs)** – Used in home and office Ethernet networks.  
+- **Telephone Systems** – Used in landline communication.  
+- **Security Systems** – Surveillance and alarm systems.  
+- **Industrial Communication** – STP cables are used in noisy environments.  
 
-### **b) Coaxial Cable**  
+---
+
+#### **b) Coaxial Cable**  
 A **coaxial cable** is a type of guided transmission medium used for data and signal transmission. It consists of a central conductor surrounded by multiple layers of insulation and shielding, which help reduce interference and improve signal quality.  
 
 ---
@@ -116,24 +120,26 @@ Coaxial cables are classified based on their impedance and applications:
 ---
 
 #### **Advantages of Coaxial Cables**  
-**Better Shielding** – Reduces interference and crosstalk.  
-**Higher Bandwidth** – Supports better data transmission compared to twisted pair cables.  
-**Longer Distance Support** – Can carry signals over greater distances without significant loss.  
-**Durability** – Resistant to physical and environmental damage.  
+- **Better Shielding** – Reduces interference and crosstalk.  
+- **Higher Bandwidth** – Supports better data transmission compared to twisted pair cables.  
+- **Longer Distance Support** – Can carry signals over greater distances without significant loss.  
+- **Durability** – Resistant to physical and environmental damage.  
 
 #### **Disadvantages of Coaxial Cables**  
-**Bulkier and Less Flexible** – More difficult to install compared to twisted pair cables.  
-**Expensive** – Higher cost than twisted pair cables.  
-**Limited Upgradability** – Less scalable compared to fiber optic technology.  
+- **Bulkier and Less Flexible** – More difficult to install compared to twisted pair cables.  
+- **Expensive** – Higher cost than twisted pair cables.  
+- **Limited Upgradability** – Less scalable compared to fiber optic technology.  
 
 ---
 
 #### **Applications of Coaxial Cables**  
-**Cable Television (CATV)** – Used for TV signal transmission.  
-**Broadband Internet** – Used by cable internet service providers.  
-**CCTV Surveillance Systems** – Commonly used for security camera connections.  
-**Radio and Communication Networks** – Used in radio antennas and broadcasting.  
-**Older Ethernet Networks** – Used in Thicknet (10BASE5) and Thinnet (10BASE2) Ethernet networks.  
+- **Cable Television (CATV)** – Used for TV signal transmission.  
+- **Broadband Internet** – Used by cable internet service providers.  
+- **CCTV Surveillance Systems** – Commonly used for security camera connections.  
+- **Radio and Communication Networks** – Used in radio antennas and broadcasting.  
+- **Older Ethernet Networks** – Used in Thicknet (10BASE5) and Thinnet (10BASE2) Ethernet networks.  
+
+---
 
 #### **c) Fiber Optic Cable**  
 - **Description**: Uses light signals to transmit data through glass or plastic fibers.  
@@ -179,6 +185,8 @@ Unguided media use electromagnetic waves to transmit data without physical cable
 | Microwaves    | Up to Gbps      | Medium   | Medium       | Medium | Satellite, cellular networks |
 | Infrared      | Up to 100 Mbps  | Very Short | Low       | Low   | Remote controls, IoT |
 
+---
+
 ## **BNC Connector (Bayonet Neill-Concelman)**  
 
 A **BNC (Bayonet Neill-Concelman) connector** is a type of coaxial cable connector used for quick connect and disconnect applications. It features a **bayonet-style locking mechanism**, ensuring a secure and reliable connection.  
@@ -208,10 +216,13 @@ BNC connectors are classified based on impedance and application:
 
 > Replaced by RJ45 in modern LANs.  
 
+---
+
 ## **Fiber Optic Cables**  
 
 **Fiber optic cables** are high-speed transmission media that use **light pulses** instead of electrical signals to transmit data. These cables consist of ultra-thin strands of **glass or plastic** that carry data at extremely high speeds over long distances with minimal signal loss.  
 
+---
 
 ### **Structure of a Fiber Optic Cable**  
 A typical fiber optic cable consists of:  
@@ -221,23 +232,27 @@ A typical fiber optic cable consists of:
 3. **Buffer Coating** – A protective layer that shields the fiber from damage.  
 4. **Outer Jacket** – The outermost layer that protects the cable from environmental and mechanical damage.  
 
+---
+
 ### **Types of Fiber Optic Cables**  
 
 Fiber optic cables are mainly classified into two types:  
 
-#### **1. Single-Mode Fiber (SMF)**
+#### **1. Single-Mode Fiber (SMF)**  
 - **Core Size**: Small (around 8-10 microns in diameter).  
 - **Light Source**: Uses laser light.  
 - **Data Transmission**: Long-distance, high-speed transmission.  
 - **Signal Loss**: Very low.  
 - **Usage**: Long-distance telecommunications, high-speed internet backbone.  
 
-#### **2. Multi-Mode Fiber (MMF)**
+#### **2. Multi-Mode Fiber (MMF)**  
 - **Core Size**: Larger (around 50-62.5 microns in diameter).  
 - **Light Source**: Uses LED light.  
 - **Data Transmission**: Short-distance communication with lower speeds.  
 - **Signal Loss**: Higher compared to SMF.  
 - **Usage**: Local Area Networks (LANs), data centers, and short-range communications.  
+
+---
 
 ### **Advantages of Fiber Optic Cables**  
 - **High-Speed Transmission** – Supports speeds up to **Tbps (terabits per second)**.  
@@ -246,10 +261,14 @@ Fiber optic cables are mainly classified into two types:
 - **More Secure** – Difficult to tap into, making it ideal for secure communications.  
 - **Lightweight and Durable** – Less bulky compared to coaxial or twisted pair cables.  
 
+---
+
 ### **Disadvantages of Fiber Optic Cables**  
 - **Expensive** – Higher installation and maintenance costs than copper cables.  
 - **Fragile** – Glass fibers are more delicate and require careful handling.  
 - **Complex Installation** – Requires specialized equipment and expertise.  
+
+---
 
 ### **Applications of Fiber Optic Cables**  
 - **Internet and Broadband Networks** – Used in high-speed internet connections (e.g., fiber-to-the-home (FTTH)).  
@@ -257,6 +276,8 @@ Fiber optic cables are mainly classified into two types:
 - **Medical Equipment** – Used in endoscopy and laser surgeries.  
 - **Data Centers** – High-speed connections between servers.  
 - **Military and Aerospace** – Secure and high-speed data transmission.  
+
+---
 
 ### **Modes of Fiber Optic Transmission**  
 In fiber optics, the term **"mode"** refers to the path that light rays take as they travel through the fiber core. The mode of transmission affects the **speed, distance, and efficiency** of data transfer.  
@@ -308,6 +329,8 @@ A type of fiber optic cable that allows **multiple** light modes (paths) to trav
 	- Data centers and short-distance connections.  
 	- Audio-visual applications and campus networks.  
 
+---
+
 #### **Comparison: Single-Mode vs. Multi-Mode Fiber**  
 | Feature           | Single-Mode Fiber (SMF)            | Multi-Mode Fiber (MMF)               |
 | ----------------- | ---------------------------------- | ------------------------------------ |
@@ -318,8 +341,12 @@ A type of fiber optic cable that allows **multiple** light modes (paths) to trav
 | **Cost**          | Higher                             | Lower                                |
 | **Usage**         | Long-distance, high-speed networks | Short-distance LANs and data centers |
 
+---
+
 ### **Unguided Media Transmission (Wireless Communication)**  
 **Unguided media transmission**, also known as **wireless communication**, is a type of data transmission where signals are sent through **air, space, or water** without the use of physical cables. It uses **electromagnetic waves** to carry data over long or short distances.  
+
+---
 
 ## **Types of Unguided Media**  
 Unguided transmission is classified into three main types based on the frequency range:  
@@ -330,6 +357,7 @@ Unguided transmission is classified into three main types based on the frequency
 | **Microwaves**    | 1 GHz – 300 GHz     | Medium to Long | Mobile networks, satellite communication |
 | **Infrared (IR)** | 300 GHz – 400 THz   | Very Short     | TV remotes, short-range data transfer    |
 
+---
 
 ## **1. Radio Wave Transmission**  
 **Definition**: Uses low-frequency electromagnetic waves that can travel long distances and penetrate obstacles like buildings.  
